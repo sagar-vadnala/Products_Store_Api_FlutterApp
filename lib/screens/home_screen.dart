@@ -1,4 +1,3 @@
-import 'package:card_swiper/card_swiper.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_iconly/flutter_iconly.dart';
 import 'package:page_transition/page_transition.dart';
@@ -10,8 +9,6 @@ import 'package:products_app/screens/users_screen.dart';
 import 'package:products_app/services/api_handler.dart';
 import 'package:products_app/widgets/appbar_icons.dart';
 import 'package:products_app/widgets/feed_grid.dart';
-import 'package:products_app/widgets/feeds_widget.dart';
-import 'package:products_app/widgets/sale_widget.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -122,22 +119,23 @@ class _HomeScreenState extends State<HomeScreen> {
                     children: [
                       SizedBox(
                         height: size.height * 0.25,
-                        child: Swiper(
-                          itemCount: 3,
-                          itemBuilder: (ctx, index) {
-                            // PageTransition(
-                            //   child: SaleWidget(),
-                            //   type: PageTransitionType.fade,
-                            // );
-                            return const SaleWidget();
-                          },
-                          autoplay: true,
-                          pagination: const SwiperPagination(
-                              alignment: Alignment.bottomCenter,
-                              builder: DotSwiperPaginationBuilder(
-                                  color: Colors.white,
-                                  activeColor: Colors.red)),
-                        ),
+                        child: Text("data")
+                        // Swiper(
+                        //   itemCount: 3,
+                        //   itemBuilder: (ctx, index) {
+                        //     // PageTransition(
+                        //     //   child: SaleWidget(),
+                        //     //   type: PageTransitionType.fade,
+                        //     // );
+                        //     return const SaleWidget();
+                        //   },
+                        //   autoplay: true,
+                        //   pagination: const SwiperPagination(
+                        //       alignment: Alignment.bottomCenter,
+                        //       builder: DotSwiperPaginationBuilder(
+                        //           color: Colors.white,
+                        //           activeColor: Colors.red)),
+                        // ),
                       ),
                       Padding(
                         padding: const EdgeInsets.all(8.0),

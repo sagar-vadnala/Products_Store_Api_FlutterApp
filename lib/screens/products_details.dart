@@ -1,7 +1,4 @@
 import 'dart:developer';
-
-import 'package:card_swiper/card_swiper.dart';
-import 'package:fancy_shimmer_image/fancy_shimmer_image.dart';
 import 'package:flutter/material.dart';
 import 'package:products_app/conts/global_colors.dart';
 import 'package:products_app/models/product_model.dart';
@@ -118,24 +115,25 @@ class _ProductDetailsState extends State<ProductDetails> {
                         ),
                         SizedBox(
                           height: size.height * 0.4,
-                          child: Swiper(
-                            itemBuilder: (BuildContext context, int index) {
-                              return FancyShimmerImage(
-                                width: double.infinity,
-                                imageUrl:
-                                    productModel!.images![index].toString(),
-                                boxFit: BoxFit.fill,
-                              );
-                            },
-                            autoplay: true,
-                            itemCount: 3,
-                            pagination: const SwiperPagination(
-                                alignment: Alignment.bottomCenter,
-                                builder: DotSwiperPaginationBuilder(
-                                  color: Colors.white,
-                                  activeColor: Colors.red,
-                                )),
-                          ),
+                          child: Text("data")
+                          // Swiper(
+                          //   itemBuilder: (BuildContext context, int index) {
+                          //     return FancyShimmerImage(
+                          //       width: double.infinity,
+                          //       imageUrl:
+                          //           productModel!.images![index].toString(),
+                          //       boxFit: BoxFit.fill,
+                          //     );
+                          //   },
+                          //   autoplay: true,
+                          //   itemCount: 3,
+                          //   pagination: const SwiperPagination(
+                          //       alignment: Alignment.bottomCenter,
+                          //       builder: DotSwiperPaginationBuilder(
+                          //         color: Colors.white,
+                          //         activeColor: Colors.red,
+                          //       )),
+                          // ),
                         ),
                         const SizedBox(
                           height: 18,

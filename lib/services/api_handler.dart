@@ -1,7 +1,5 @@
 import 'dart:convert';
 import 'dart:developer';
-import 'dart:ffi';
-
 import 'package:http/http.dart' as http;
 import 'package:products_app/conts/api_conts.dart';
 import 'package:products_app/models/categories_model.dart';
